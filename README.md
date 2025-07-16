@@ -1,6 +1,6 @@
 # KineViz: Análisis, Optimización y Visualización de Datos para Estudios Kinesiológicos
 
-![KineViz Demo](DEMO.mp4)
+https://github.com/user-attachments/assets/1228d6c1-51da-4ada-bea8-cbeb08e7a742
 
 **Introducción**
 
@@ -42,9 +42,9 @@ KineViz ofrece un conjunto integral de funcionalidades para la gestión y análi
 
 ## Recursos Adicionales
 
-* **Manual de Usuario Completo**: Para una guía detallada de todas las funcionalidades, consulta `manual_usuario.txt` incluido en el repositorio.
+* **Manual de Usuario Completo**: Para una guía detallada de todas las funcionalidades, consulta el **[Manual de Usuario](manual_usuario.txt)** (`manual_usuario.txt`) incluido en el repositorio.
 * **Ayuda Contextual**: La aplicación incluye botones con `?` y notas emergentes (tooltips) al posicionar el cursor sobre las opciones para una ayuda rápida.
-* **Video DEMO**: Un video introductorio (`DEMO.mp4`) está disponible para mostrar algunos flujos de trabajo clave.
+* **Video DEMO**: Un video introductorio **[DEMO](DEMO.mp4)** (`DEMO.mp4`) está disponible para mostrar los flujos de trabajo clave.
 
 ---
 
