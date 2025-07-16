@@ -1,4 +1,4 @@
-# KineViz
+# KineViz: Análisis, Optimización y Visualización de Datos para Estudios Kinesiológicos
 
 **Releases**  
 En la sección **Releases** del repositorio encontrarás una versión empaquetada para Windows que permite ejecutar KineViz directamente sin necesidad de instalar dependencias.
