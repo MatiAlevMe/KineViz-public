@@ -7,8 +7,13 @@ En la sección **Releases** del repositorio encontrarás una versión empaquetad
 
 ### Introducción
 
-KineViz es una herramienta desarrollada para el análisis y visualización de datos biomecánicos. Este documento proporciona los pasos necesarios para configurar y ejecutar la aplicación en sistemas Windows 10 y Mac OS. El programa está escrito principalmente en Python y utiliza varias bibliotecas de código abierto para procesar y visualizar los datos.
-Requisitos
+**KineViz** es una herramienta desarrollada para el análisis y visualización de datos biomecánicos, diseñada específicamente para responder a las necesidades de la **Escuela de Kinesiología de la Pontificia Universidad Católica de Valparaíso**.  
+
+La aplicación permite el post-procesamiento eficiente de datos de cinemática, cinética y electromiografía, facilitando análisis y visualización tanto de datos continuos como discretos (t-test, ANOVA), optimizando la interpretación de resultados para contextos clínicos y deportivos.  
+
+Este documento detalla los pasos necesarios para configurar y ejecutar KineViz en sistemas **Windows 10** y **macOS**. La herramienta está programada principalmente en **Python** y hace uso de diversas bibliotecas de código abierto para el procesamiento, análisis y visualización de datos biomecánicos.
+
+**Requisitos**
 
 Antes de ejecutar el programa, necesitarás:
 
