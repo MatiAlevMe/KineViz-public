@@ -16,7 +16,7 @@ Antes de ejecutar el programa, necesitarás:
     Librerías necesarias para Python (detalladas a continuación)
     Git (opcional, si vas a clonar desde un repositorio)
 
-Librerías Necesarias
+### Librerías Necesarias
 
 El programa depende de varias librerías de Python para su correcto funcionamiento. La lista completa y las versiones específicas se encuentran en el archivo `requirements.txt`.
 Algunas de las librerías clave incluyen:
@@ -31,7 +31,7 @@ Algunas de las librerías clave incluyen:
 
 Se recomienda encarecidamente instalar todas las dependencias utilizando el archivo `requirements.txt` para asegurar la compatibilidad.
 
-Estructura del Proyecto
+### Estructura del Proyecto
 
 El proyecto KineViz está organizado en los siguientes módulos principales:
 
@@ -55,7 +55,7 @@ bash
 
 pip install -r requirements.txt
 
-Instrucciones para Windows 10
+### Instrucciones para Windows 10
 Paso 1: Instalar Python
 
     Descarga Python para Windows desde el sitio oficial de Python.
@@ -74,7 +74,7 @@ Paso 2: Descargar el Programa
 
     bash
 
-git clone https://github.com/MatiAlevMe/KineViz.git
+git clone https://github.com/MatiAlevMe/KineViz-public.git
 
 Navega a la carpeta donde guardaste el programa:
 
@@ -96,10 +96,11 @@ En el Símbolo del Sistema, navega al directorio donde se encuentra el programa 
 
 bash
 
-python main.py
+python -m kineviz.app
 
 Esto abrirá la interfaz gráfica de usuario (GUI), donde podrás cargar archivos de datos biomecánicos y realizar análisis.
-Instrucciones para Mac OS
+
+### Instrucciones para Mac OS
 Paso 1: Instalar Python
 
     Mac OS suele venir con Python preinstalado, pero se recomienda instalar Python 3.x usando Homebrew:
@@ -122,7 +123,7 @@ Paso 2: Descargar el Programa
 
     bash
 
-git clone https://github.com/MatiAlevMe/KineViz.git
+git clone https://github.com/MatiAlevMe/KineViz-public.git
 
 Navega a la carpeta donde guardaste el programa:
 
@@ -144,10 +145,11 @@ En Terminal, navega al directorio donde se encuentra el programa KineViz y ejecu
 
 bash
 
-python3 main.py
+python3 -m kineviz.app
 
 Esto lanzará la interfaz gráfica de usuario (GUI), permitiéndote procesar y analizar los archivos de datos.
-Solución de Problemas
+
+### Solución de Problemas
 
     Faltan Librerías: Si encuentras problemas con librerías faltantes, asegúrate de que todas las bibliotecas requeridas estén instaladas utilizando la versión correcta de Python.
 
@@ -155,11 +157,50 @@ Solución de Problemas
 
     bash
 
-    sudo python3 main.py
+    sudo python3 -m kineviz.app
 
     Problemas con la Ruta de Python: En Windows, si Python no es reconocido, asegúrate de haber agregado Python al PATH del sistema durante la instalación.
 
-Licencia
+## Empaquetado con PyInstaller
+
+Para generar el ejecutable de KineViz usando el archivo de especificación `kineviz.spec`, sigue estos pasos:
+
+**Compatibilidad con Windows**
+1. Asegúrate de tener Python 3.12.6 instalado en tu sistema operativo.  
+2. Durante la instalación de Python, marca la casilla **Add Python to PATH**.  
+3. Clona o descarga el repositorio y descomprime el ZIP en una carpeta local.  
+4. Abre la terminal (o PowerShell) en la raíz del proyecto.  
+5. Ejecuta:
+   ```bash
+   pip install -r requirements.txt
+   python -m PyInstaller kineviz.spec
+6. Una vez completo, ve a la carpeta dist/ y ejecuta:
+   ```bash
+    dist/KineViz/KineViz.exe
+7. Si encuentras problemas, limpia los directorios de compilación y vuelve a intentar:
+    ```bash
+    rm -rf dist build
+
+**Compatibilidad con macOS**  
+Aunque los pasos anteriores están centrados en Windows, el proceso en macOS es prácticamente el mismo con estas diferencias clave:  
+1. Instala Python 3.12.6 usando Homebrew (`brew install python@3.12`) o el instalador oficial desde python.org, marcando **Add Python to PATH** si usas el paquete de python.org.  
+2. En macOS la llamada al intérprete suele ser `python3` en lugar de `python`.  
+3. Ajusta en `kineviz.spec` las rutas de icono y de datos a las convenciones de macOS (por ejemplo, empaqueta recursos en `Contents/Resources`).  
+4. Empaqueta con:
+     ```bash
+     pip3 install -r requirements.txt
+     python3 -m PyInstaller kineviz.spec
+     ```
+5. Al finalizar encontrarás el bundle en `dist/KineViz/KineViz.app`. Ábrelo con:
+     ```bash
+     open dist/KineViz/KineViz.app
+     ```
+6. Si surge algún error, limpia y repite:
+     ```bash
+     rm -rf dist build
+     ```
+
+## Licencia
 
 Este proyecto está bajo la Licencia de uso personal de Matías Alevropulos.
 
